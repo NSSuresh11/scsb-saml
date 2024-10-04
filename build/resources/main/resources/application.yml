@@ -1,0 +1,18 @@
+spring:
+security:
+  saml2:
+    relyingparty:
+      registration:
+        recap:
+          identityprovider:
+            entity-id: "iam.htcinc.com"
+            single-sign-on-service:
+              location: "https://iam.htcinc.com/htcauth/module.php/saml/idp/singleSignOnService"
+            single-logout-service:
+              location: "https://iam.htcinc.com/htcauth/module.php/saml/idp/singleLogout"
+            verification:
+              credentials:
+                - certificate-location: classpath:okta.cert
+            signing:
+              authentication-request: false
+

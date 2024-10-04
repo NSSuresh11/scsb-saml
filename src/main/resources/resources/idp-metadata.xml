@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" entityID="iam.htcinc.com">
+  <md:IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+    <md:KeyDescriptor use="signing">
+      <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <ds:X509Data>
+          <ds:X509Certificate>MIIFoTCCA4mgAwIBAgIJAJr6d1NUq+vLMA0GCSqGSIb3DQEBCwUAMGcxCzAJBgNVBAYTAklOMQswCQYDVQQIDAJUTjEQMA4GA1UEBwwHQ2hlbm5haTETMBEGA1UECgwKSFRDIEdsb2JhbDELMAkGA1UECwwCSVQxFzAVBgNVBAMMDmlhbS5odGNpbmMuY29tMB4XDTIzMDExNzA3MjgyNVoXDTMzMDExNDA3MjgyNVowZzELMAkGA1UEBhMCSU4xCzAJBgNVBAgMAlROMRAwDgYDVQQHDAdDaGVubmFpMRMwEQYDVQQKDApIVEMgR2xvYmFsMQswCQYDVQQLDAJJVDEXMBUGA1UEAwwOaWFtLmh0Y2luYy5jb20wggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQCkMO4kAlJHSGgiXZ7BpSaxRQKw+FhoM8A7DenbEfGqeLoddLuCwWIJboY4MSDNTwem9el6DTmCX6A9LYZCENmKsCJuR3Z+iWs1BPgnVxJ6e13htWywXPdUUIYNLbOHFQKwOGnszBp83BPzlSDmYR6GnnvKt0rK0MJZ4MJbWFantltOlna1TJm1OkYgPP4fksmcJgNXOIkLeVK8VBYHjxDtygjWXR//lw18zf3vEXfbr7JvU93jO3WuweCqX8ou8ObWSeUWqv4F/CMqeWblwPUWK68p0mbeIbY7BfEWhW+y7aYLq0OhwlqUQeCDUZZRHvzbEip7BXz9Cdd3ysY6Zziy9+ctbq9hZzaOTd6PTN8u2B2DC5X8J8sE+OqShZW+hMi3l1C+a98ZvbL5q2gLCgF6HKJoLjSuf2JgJjbsCbk+AxCzGpm3pC2X2AcisvUY0oT3H/kWVzA7wos4eqbFJdyoI1kpRiCRQKJ3sqCddbpzHYDdANo7RiORs0eTC7RwtdgPEkPBYpXuLkL/Ik0ms+m5SqRbJFL9DXYXMNYfJp0bRNAumwlTM93TXZZ6y6LYzwi81TDdhxmNc5x272eV77OWUcn+EsZRs4elut07qRuuMbef7cxCVthYkanxmyF9W8yZKPjG6JTi4JH8IyNWn+NLker/CzbXRakcwghUF5TnkwIDAQABo1AwTjAdBgNVHQ4EFgQUSj3sYKqDzVcbmPVYVLxgVDjj6VwwHwYDVR0jBBgwFoAUSj3sYKqDzVcbmPVYVLxgVDjj6VwwDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAgEAoG5Q2ZgLzzxMUTl3Jdmcpaq9oH+XZF2yySYvzonbaS7WOPGdrxdojqrIm4Ll6isv8Y2UoO07NMBKYdbKWVS4IkgEULc9I9do7lgEgtupe6kL3Oc2BRsNNtWJy+lY38saletpAMkaiuo3NTVekvx1CjJdZ/pASmTNwNywV2o2vJt+ND/w7VbCpRSl7JGGpgFaDA9P2ICKWbQ92/xWhlwBghiAVhoab0nXJap63bsG0FRYJbHN1W+KDB0eRBwhSqqxc6E6B6y9tyVfeYuIfFF+yj52KjRvtHyOhhxP/93/Zp27585h16vs2JcYqqD1qKlIDGDwamIhXEijFRscglmJkJrJcMwQlY2OYjEn3cLEEtuVO8+rgcPpM6X3grwuaNyYbivk60k58pLjEI9oBnPDslhiRXc/asgDv5yGz2JdU4XEOe7DVbUNhhZyuE4AYSBiKih4F3R45juhq7bbVvms0cL1UaDdZvaoRa/Xj/qQPmzmRJ/WY5o1ln0C73JYLB3DKnV/8RX09JVbCCd0P7/LG1iPsuF5f+bSu3qW8ZsR+0iCY2k8FaJ6Tk+b8Rc0vpu6xZjnsYTIY1hxIgFDw4tVULx/Q2Uz8MMZFSUUXiDGFCY6bHsxzMS7TJC2CDsWQknd93ATLUjeUj8foOvFqPdkmCnO+3vCyB1EnjJYl2xK64Y=</ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+    </md:KeyDescriptor>
+    <md:KeyDescriptor use="encryption">
+      <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <ds:X509Data>
+          <ds:X509Certificate>MIIFoTCCA4mgAwIBAgIJAJr6d1NUq+vLMA0GCSqGSIb3DQEBCwUAMGcxCzAJBgNVBAYTAklOMQswCQYDVQQIDAJUTjEQMA4GA1UEBwwHQ2hlbm5haTETMBEGA1UECgwKSFRDIEdsb2JhbDELMAkGA1UECwwCSVQxFzAVBgNVBAMMDmlhbS5odGNpbmMuY29tMB4XDTIzMDExNzA3MjgyNVoXDTMzMDExNDA3MjgyNVowZzELMAkGA1UEBhMCSU4xCzAJBgNVBAgMAlROMRAwDgYDVQQHDAdDaGVubmFpMRMwEQYDVQQKDApIVEMgR2xvYmFsMQswCQYDVQQLDAJJVDEXMBUGA1UEAwwOaWFtLmh0Y2luYy5jb20wggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQCkMO4kAlJHSGgiXZ7BpSaxRQKw+FhoM8A7DenbEfGqeLoddLuCwWIJboY4MSDNTwem9el6DTmCX6A9LYZCENmKsCJuR3Z+iWs1BPgnVxJ6e13htWywXPdUUIYNLbOHFQKwOGnszBp83BPzlSDmYR6GnnvKt0rK0MJZ4MJbWFantltOlna1TJm1OkYgPP4fksmcJgNXOIkLeVK8VBYHjxDtygjWXR//lw18zf3vEXfbr7JvU93jO3WuweCqX8ou8ObWSeUWqv4F/CMqeWblwPUWK68p0mbeIbY7BfEWhW+y7aYLq0OhwlqUQeCDUZZRHvzbEip7BXz9Cdd3ysY6Zziy9+ctbq9hZzaOTd6PTN8u2B2DC5X8J8sE+OqShZW+hMi3l1C+a98ZvbL5q2gLCgF6HKJoLjSuf2JgJjbsCbk+AxCzGpm3pC2X2AcisvUY0oT3H/kWVzA7wos4eqbFJdyoI1kpRiCRQKJ3sqCddbpzHYDdANo7RiORs0eTC7RwtdgPEkPBYpXuLkL/Ik0ms+m5SqRbJFL9DXYXMNYfJp0bRNAumwlTM93TXZZ6y6LYzwi81TDdhxmNc5x272eV77OWUcn+EsZRs4elut07qRuuMbef7cxCVthYkanxmyF9W8yZKPjG6JTi4JH8IyNWn+NLker/CzbXRakcwghUF5TnkwIDAQABo1AwTjAdBgNVHQ4EFgQUSj3sYKqDzVcbmPVYVLxgVDjj6VwwHwYDVR0jBBgwFoAUSj3sYKqDzVcbmPVYVLxgVDjj6VwwDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAgEAoG5Q2ZgLzzxMUTl3Jdmcpaq9oH+XZF2yySYvzonbaS7WOPGdrxdojqrIm4Ll6isv8Y2UoO07NMBKYdbKWVS4IkgEULc9I9do7lgEgtupe6kL3Oc2BRsNNtWJy+lY38saletpAMkaiuo3NTVekvx1CjJdZ/pASmTNwNywV2o2vJt+ND/w7VbCpRSl7JGGpgFaDA9P2ICKWbQ92/xWhlwBghiAVhoab0nXJap63bsG0FRYJbHN1W+KDB0eRBwhSqqxc6E6B6y9tyVfeYuIfFF+yj52KjRvtHyOhhxP/93/Zp27585h16vs2JcYqqD1qKlIDGDwamIhXEijFRscglmJkJrJcMwQlY2OYjEn3cLEEtuVO8+rgcPpM6X3grwuaNyYbivk60k58pLjEI9oBnPDslhiRXc/asgDv5yGz2JdU4XEOe7DVbUNhhZyuE4AYSBiKih4F3R45juhq7bbVvms0cL1UaDdZvaoRa/Xj/qQPmzmRJ/WY5o1ln0C73JYLB3DKnV/8RX09JVbCCd0P7/LG1iPsuF5f+bSu3qW8ZsR+0iCY2k8FaJ6Tk+b8Rc0vpu6xZjnsYTIY1hxIgFDw4tVULx/Q2Uz8MMZFSUUXiDGFCY6bHsxzMS7TJC2CDsWQknd93ATLUjeUj8foOvFqPdkmCnO+3vCyB1EnjJYl2xK64Y=</ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+    </md:KeyDescriptor>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://iam.htcinc.com/htcauth/module.php/saml/idp/singleLogout"/>
+    <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+    <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://iam.htcinc.com/htcauth/module.php/saml/idp/singleSignOnService"/>
+  </md:IDPSSODescriptor>
+  <md:ContactPerson contactType="technical">
+    <md:GivenName>Administrator</md:GivenName>
+    <md:EmailAddress>mailto:venkata.subbarao@htcinc.com</md:EmailAddress>
+  </md:ContactPerson>
+</md:EntityDescriptor>
