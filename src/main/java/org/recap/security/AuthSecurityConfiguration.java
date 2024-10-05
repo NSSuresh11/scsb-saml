@@ -61,7 +61,7 @@ public class AuthSecurityConfiguration extends WebSecurityConfigurerAdapter {
     @Bean
     public RelyingPartyRegistrationRepository relyingPartyRegistrations() {
         RelyingPartyRegistration registration = RelyingPartyRegistrations
-                .fromMetadataLocation("/data/sso/idp-metadata.xml")
+                .fromMetadataLocation("idp-metadata.xml")
                 .registrationId("recap")
                 .build();
         return new InMemoryRelyingPartyRegistrationRepository(registration);
