@@ -58,7 +58,9 @@ public class SamlController extends AbstractController {
     @PostMapping(value = "/samlAuthService")
     @ApiOperation(value = "samlAuthService", notes = "Used to Authenticate User", consumes = "application/json")
     @ApiResponses(value = {@ApiResponse(code = 200, message = "Session created successfully")})
-    public String loginSaml(@RequestBody UsernamePasswordToken token, HttpServletRequest request, BindingResult error) {
+    public Map<String, Object> loginSaml(@RequestBody UsernamePasswordToken token, HttpServletRequest request, BindingResult error) {
+       log.info("Inside loginSaml >>>>");
+        Map<String, Object> authMap = new HashMap<>();
         AuthSecurityConfiguration authSecurityConfiguration = new AuthSecurityConfiguration();
         ObjectPostProcessor<Object> objectPostProcessor = new ObjectPostProcessor<Object>() {
             @Override
@@ -73,9 +75,10 @@ public class SamlController extends AbstractController {
                     authenticationBuilder, sharedObjects));
         }
         catch (Exception e){
-            return "Failure";
+            log.info("Caught Exception >>>>>>> " + e);
+            return authMap;
         }
-        return "Success";
+        return authMap;
     }
 
     @GetMapping(value = "/login-saml")
