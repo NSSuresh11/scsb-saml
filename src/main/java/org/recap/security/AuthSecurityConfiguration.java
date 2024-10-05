@@ -22,8 +22,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 /**
  * Created by sheiks on 30/01/17.
  */
-@RequestMapping(value = "/userSamlAuth")
-@Api(value = "userSamlAuth")
+
 @Configuration
 @EnableGlobalMethodSecurity(securedEnabled = true, prePostEnabled = true)
 @EnableOAuth2Sso
@@ -42,9 +41,6 @@ public class AuthSecurityConfiguration extends WebSecurityConfigurerAdapter {
     private String scsbUiUrl;
 
     @Override
-    @PostMapping(value = "/samlAuthService")
-    @ApiOperation(value = "samlAuthService", notes = "Used to Authenticate User", consumes = "application/json")
-    @ApiResponses(value = {@ApiResponse(code = 200, message = "Session created successfully")})
     public void configure(HttpSecurity http) throws Exception {
         // @formatter:off
         http.saml2Login(saml2 -> {
