@@ -8,7 +8,7 @@ import org.springframework.context.annotation.PropertySource;
  * The type SCSB Common Application.
  */
 @SpringBootApplication
-@PropertySource("classpath:idp-metadata.xml")
+@PropertySource("classpath:application.properties")
 public class ScsbSamlApplication {
 
 	/**
