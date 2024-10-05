@@ -38,8 +38,6 @@ import java.util.Map;
  */
 @Slf4j
 @RestController
-@RequestMapping(value = "/userSamlAuth")
-@Api(value = "userSamlAuth")
 public class SamlController extends AbstractController {
 
     @Autowired
@@ -56,9 +54,6 @@ public class SamlController extends AbstractController {
      * @return the view name
      */
 
-    @PostMapping(value = "/samlAuthService")
-    @ApiOperation(value = "samlAuthService", notes = "Used to Authenticate User", consumes = "application/json")
-    @ApiResponses(value = {@ApiResponse(code = 200, message = "Session created successfully")})
     public String loginSaml(@RequestBody UsernamePasswordToken token, HttpServletRequest request, BindingResult error) {
         AuthSecurityConfiguration authSecurityConfiguration = new AuthSecurityConfiguration();
         ObjectPostProcessor<Object> objectPostProcessor = new ObjectPostProcessor<Object>() {
