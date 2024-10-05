@@ -7,8 +7,8 @@ import org.springframework.context.annotation.PropertySource;
 /**
  * The type SCSB Common Application.
  */
-@SpringBootApplication
 @PropertySource("classpath:application.properties")
+@SpringBootApplication
 public class ScsbSamlApplication {
 
 	/**
@@ -17,6 +17,6 @@ public class ScsbSamlApplication {
 	 * @param args the input arguments
 	 */
 	public static void main(String[] args) {
-		SpringApplication.run(ScsbCommonApplication.class, args);
+		SpringApplication.run(ScsbSamlApplication.class, args);
 	}
 }
