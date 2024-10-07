@@ -47,8 +47,6 @@ public class SamlController extends AbstractController {
 
     private HttpSecurity http;
 
-
-
     /**
      * Perform the SCSB authentication and authorization after user authenticated from partners IMS
      *
@@ -86,8 +84,6 @@ public class SamlController extends AbstractController {
         log.info("Calling login /login-scsb >>>>>> ");
         try {
             Authentication auth = SecurityContextHolder.getContext().getAuthentication();
-
-
         } catch (Exception exception) {
             log.error(ScsbCommonConstants.LOG_ERROR, exception);
             log.error("Exception occurred in authentication : {}" , exception.getLocalizedMessage());
